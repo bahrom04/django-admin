@@ -56,6 +56,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "home",
+    "common.apps.CommonConfig", 
+    "ads.apps.AdsConfig",
+    "attribute.apps.AttributeConfig",
 
     # Tooling Dynamic_DT
     'django_dyn_dt',             # <-- NEW: Dynamic_DT
@@ -196,6 +199,8 @@ DYNAMIC_DATATB = {
 API_GENERATOR = {
     # SLUG -> Import_PATH 
     'product'  : "home.models.Product",
+    'common'   : "common.models.Region",
+    'common2'  : "common.models.District",
 }
 
 REST_FRAMEWORK = {
